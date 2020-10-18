@@ -44,7 +44,7 @@ class Metronome extends Component {
     }
 
     playClick = () =>{
-        const {count, beatsPerMeasure} = this.state;
+        const {count} = this.state;
         
         
         if(count === 0){
@@ -1428,96 +1428,96 @@ class Metronome extends Component {
 
                 <div class="row1">
                     
-                    <input class="drum1" value="kick" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum2" value="kick" id="2"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3" value="kick" id="3"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum4" value="kick" id="4"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5" value="kick" id="5"type="checkbox" onChange = {this.changeBeat} ></input>
-                    <input class="drum6" value="kick" id="6"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum7" value="kick" id="7"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum8" value="kick" id="8"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum9" value="kick" id="9"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum10" value="kick" id="10"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum11" value="kick" id="11"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12" value="kick" id="12"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13" value="kick" id="13"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum14" value="kick" id="14"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum15" value="kick" id="15"type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum16" value="kick" id="16"type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1" value="kick" id="1" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum2" value="kick" id="2"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum3" value="kick" id="3"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum4" value="kick" id="4"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum5" value="kick" id="5"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum6" value="kick" id="6"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum7" value="kick" id="7"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum8" value="kick" id="8"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum9" value="kick" id="9"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum10" value="kick" id="10"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum11" value="kick" id="11"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum12" value="kick" id="12"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum13" value="kick" id="13"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum14" value="kick" id="14"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum15" value="kick" id="15"type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum16" value="kick" id="16"type="checkbox" onChange = {this.changeBeat}/>
                 </div>
             
                 <div class="row2">
-                    <input class="drum111"type="checkbox" value="snare" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum211"type="checkbox" value="snare" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum311"type="checkbox"value="snare" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum411"type="checkbox"value="snare" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum511"type="checkbox"value="snare" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum61"type="checkbox"value="snare" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum71"type="checkbox"value="snare" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum81"type="checkbox"value="snare" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum91"type="checkbox"value="snare" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum101"type="checkbox"value="snare" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum11111"type="checkbox"value="snare" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1221"type="checkbox"value="snare" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1321"type="checkbox"value="snare" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1421"type="checkbox"value="snare" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1512"type="checkbox"value="snare" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1612"type="checkbox"value="snare" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum111"type="checkbox" value="snare" id="1" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum211"type="checkbox" value="snare" id="2" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum311"type="checkbox"value="snare" id="3" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum411"type="checkbox"value="snare" id="4" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum511"type="checkbox"value="snare" id="5" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum61"type="checkbox"value="snare" id="6" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum71"type="checkbox"value="snare" id="7" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum81"type="checkbox"value="snare" id="8" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum91"type="checkbox"value="snare" id="9" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum101"type="checkbox"value="snare" id="10" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum11111"type="checkbox"value="snare" id="11" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1221"type="checkbox"value="snare" id="12" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1321"type="checkbox"value="snare" id="13" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1421"type="checkbox"value="snare" id="14" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1512"type="checkbox"value="snare" id="15" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1612"type="checkbox"value="snare" id="16" type="checkbox" onChange = {this.changeBeat}/>
                 </div>
                 <div class="row3">
-                    <input class="drum1654"type="checkbox"value="clap" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum2425"type="checkbox"value="clap" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3234"type="checkbox"value="clap" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum423"type="checkbox"value="clap" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5532"type="checkbox"value="clap" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum654325"type="checkbox"value="clap" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum732"type="checkbox"value="clap" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum458"type="checkbox"value="clap" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum9234"type="checkbox"value="clap" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum103454"type="checkbox"value="clap" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1143"type="checkbox"value="clap" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13242"type="checkbox"value="clap" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13253"type="checkbox"value="clap" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1344"type="checkbox"value="clap" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1235"type="checkbox"value="clap" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum16432"type="checkbox"value="clap" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1654"type="checkbox"value="clap" id="1" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum2425"type="checkbox"value="clap" id="2" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum3234"type="checkbox"value="clap" id="3" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum423"type="checkbox"value="clap" id="4" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum5532"type="checkbox"value="clap" id="5" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum654325"type="checkbox"value="clap" id="6" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum732"type="checkbox"value="clap" id="7" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum458"type="checkbox"value="clap" id="8" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum9234"type="checkbox"value="clap" id="9" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum103454"type="checkbox"value="clap" id="10" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1143"type="checkbox"value="clap" id="11" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum13242"type="checkbox"value="clap" id="12" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum13253"type="checkbox"value="clap" id="13" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1344"type="checkbox"value="clap" id="14" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1235"type="checkbox"value="clap" id="15" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum16432"type="checkbox"value="clap" id="16" type="checkbox" onChange = {this.changeBeat}/>
                 </div>
                 <div class="row4">
-                    <input class="drum323441"type="checkbox"value="perc" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum25735"type="checkbox"value="perc" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum56245473"type="checkbox"value="perc" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum46547547"type="checkbox"value="perc" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5734473"type="checkbox"value="perc" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum6537435754"type="checkbox"value="perc" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum775474"type="checkbox"value="perc" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum757457348"type="checkbox"value="perc" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum97696967"type="checkbox"value="perc" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1032523143"type="checkbox"value="perc" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum112352135"type="checkbox"value="perc" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1256354745"type="checkbox"value="perc" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum135754"type="checkbox"value="perc" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum143246456"type="checkbox"value="perc" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum15547653"type="checkbox"value="perc" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum161253346"type="checkbox"value="perc" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum323441"type="checkbox"value="perc" id="1" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum25735"type="checkbox"value="perc" id="2" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum56245473"type="checkbox"value="perc" id="3" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum46547547"type="checkbox"value="perc" id="4" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum5734473"type="checkbox"value="perc" id="5" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum6537435754"type="checkbox"value="perc" id="6" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum775474"type="checkbox"value="perc" id="7" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum757457348"type="checkbox"value="perc" id="8" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum97696967"type="checkbox"value="perc" id="9" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1032523143"type="checkbox"value="perc" id="10" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum112352135"type="checkbox"value="perc" id="11" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1256354745"type="checkbox"value="perc" id="12" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum135754"type="checkbox"value="perc" id="13" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum143246456"type="checkbox"value="perc" id="14" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum15547653"type="checkbox"value="perc" id="15" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum161253346"type="checkbox"value="perc" id="16" type="checkbox" onChange = {this.changeBeat}/>
                 </div>
 
                 <div class="row5">
-                    <input class="drum710"type="checkbox"value="hat" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum711"type="checkbox"value="hat" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3712"type="checkbox"value="hat" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum41209218302913"type="checkbox"value="hat" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum52109381290"type="checkbox"value="hat" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum6231903821093"type="checkbox"value="hat" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum7213098213821-3"type="checkbox"value="hat" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum821089321903"type="checkbox"value="hat" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum92128913712"type="checkbox"value="hat" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12918372109830"type="checkbox"value="hat" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12981370928173121"type="checkbox"value="hat" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12131827328912"type="checkbox"value="hat" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum131231298210"type="checkbox"value="hat" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1412937301928"type="checkbox"value="hat" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1512389123210983"type="checkbox"value="hat" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum1612321321312"type="checkbox"value="hat" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum710"type="checkbox"value="hat" id="1" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum711"type="checkbox"value="hat" id="2" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum3712"type="checkbox"value="hat" id="3" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum41209218302913"type="checkbox"value="hat" id="4" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum52109381290"type="checkbox"value="hat" id="5" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum6231903821093"type="checkbox"value="hat" id="6" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum7213098213821-3"type="checkbox"value="hat" id="7" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum821089321903"type="checkbox"value="hat" id="8" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum92128913712"type="checkbox"value="hat" id="9" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum12918372109830"type="checkbox"value="hat" id="10" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum12981370928173121"type="checkbox"value="hat" id="11" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum12131827328912"type="checkbox"value="hat" id="12" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum131231298210"type="checkbox"value="hat" id="13" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1412937301928"type="checkbox"value="hat" id="14" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1512389123210983"type="checkbox"value="hat" id="15" type="checkbox" onChange = {this.changeBeat}/>
+                    <input class="drum1612321321312"type="checkbox"value="hat" id="16" type="checkbox" onChange = {this.changeBeat}/>
                 </div>
             
              

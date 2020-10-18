@@ -66,6 +66,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -88,6 +89,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -110,6 +112,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -132,6 +135,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -154,6 +158,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -176,6 +181,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -198,6 +204,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -220,6 +227,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -242,6 +250,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -264,6 +273,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -286,6 +296,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -308,6 +319,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -329,7 +341,8 @@ class Metronome extends Component {
                 }
                 if(item==="clap"){
                     this.clap.play()
-                }
+                }return(null)
+
             })
 
         }
@@ -352,6 +365,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -374,6 +388,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -396,6 +411,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
+                return(null)
             })
 
         }
@@ -463,8 +479,9 @@ class Metronome extends Component {
                     ({
                     playOn1: list
                   })
-
+                  
                 )
+                return(null)
             }
             
             if(parseInt(e.target.id) === 2){
@@ -489,7 +506,9 @@ class Metronome extends Component {
                     playOn2: list
                   })
 
-                )
+                ) 
+                return(null)
+                
             }
             if(parseInt(e.target.id) === 3){
                 console.log("here")
@@ -515,6 +534,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 4){
                 console.log("here")
@@ -565,6 +585,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 6){
                 console.log("here")
@@ -590,6 +611,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 7){
                 console.log("here")
@@ -615,6 +637,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 8){
                 console.log("here")
@@ -640,6 +663,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 9){
                 console.log("here")
@@ -665,6 +689,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 10){
                 console.log("here")
@@ -690,6 +715,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 11){
                 console.log("here")
@@ -715,6 +741,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 12){
                 console.log("here")
@@ -740,6 +767,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 13){
                 console.log("here")
@@ -765,6 +793,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 14){
                 console.log("here")
@@ -790,6 +819,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 15){
                 console.log("here")
@@ -815,6 +845,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 16){
                 console.log("here")
@@ -840,6 +871,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
 
         }
@@ -874,6 +906,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 2){
                 
@@ -905,6 +938,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 3){
                 
@@ -936,6 +970,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 4){
                 
@@ -967,6 +1002,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 5){
                 
@@ -998,6 +1034,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 6){
                 
@@ -1029,6 +1066,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 7){
                 
@@ -1060,6 +1098,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 8){
                 
@@ -1091,6 +1130,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 9){
                 
@@ -1122,6 +1162,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 10){
                 
@@ -1153,6 +1194,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 11){
                 
@@ -1184,6 +1226,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 12){
                 
@@ -1215,6 +1258,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 13){
                 
@@ -1246,6 +1290,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 14){
                 
@@ -1277,6 +1322,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 15){
                 
@@ -1308,6 +1354,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
             if(parseInt(e.target.id) === 16){
                 
@@ -1339,6 +1386,7 @@ class Metronome extends Component {
                   })
 
                 )
+                return(null)
             }
         }
       }
@@ -1399,77 +1447,77 @@ class Metronome extends Component {
                 </div>
             
                 <div class="row2">
-                    <input class="drum1"type="checkbox" value="snare" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum2"type="checkbox" value="snare" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3"type="checkbox"value="snare" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum4"type="checkbox"value="snare" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5"type="checkbox"value="snare" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum6"type="checkbox"value="snare" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum7"type="checkbox"value="snare" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum8"type="checkbox"value="snare" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum9"type="checkbox"value="snare" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum10"type="checkbox"value="snare" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum11"type="checkbox"value="snare" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12"type="checkbox"value="snare" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13"type="checkbox"value="snare" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum14"type="checkbox"value="snare" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum15"type="checkbox"value="snare" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum16"type="checkbox"value="snare" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum111"type="checkbox" value="snare" id="1" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum211"type="checkbox" value="snare" id="2" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum311"type="checkbox"value="snare" id="3" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum411"type="checkbox"value="snare" id="4" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum511"type="checkbox"value="snare" id="5" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum61"type="checkbox"value="snare" id="6" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum71"type="checkbox"value="snare" id="7" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum81"type="checkbox"value="snare" id="8" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum91"type="checkbox"value="snare" id="9" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum101"type="checkbox"value="snare" id="10" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum11111"type="checkbox"value="snare" id="11" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1221"type="checkbox"value="snare" id="12" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1321"type="checkbox"value="snare" id="13" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1421"type="checkbox"value="snare" id="14" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1512"type="checkbox"value="snare" id="15" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1612"type="checkbox"value="snare" id="16" type="checkbox" onChange = {this.changeBeat}></input>
                 </div>
                 <div class="row3">
-                    <input class="drum1"type="checkbox"value="clap" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum2"type="checkbox"value="clap" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3"type="checkbox"value="clap" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum4"type="checkbox"value="clap" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5"type="checkbox"value="clap" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum6"type="checkbox"value="clap" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum7"type="checkbox"value="clap" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum8"type="checkbox"value="clap" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum9"type="checkbox"value="clap" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum10"type="checkbox"value="clap" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum11"type="checkbox"value="clap" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12"type="checkbox"value="clap" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13"type="checkbox"value="clap" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum14"type="checkbox"value="clap" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum15"type="checkbox"value="clap" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum16"type="checkbox"value="clap" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1654"type="checkbox"value="clap" id="1" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum2425"type="checkbox"value="clap" id="2" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum3234"type="checkbox"value="clap" id="3" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum423"type="checkbox"value="clap" id="4" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum5532"type="checkbox"value="clap" id="5" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum654325"type="checkbox"value="clap" id="6" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum732"type="checkbox"value="clap" id="7" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum458"type="checkbox"value="clap" id="8" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum9234"type="checkbox"value="clap" id="9" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum103454"type="checkbox"value="clap" id="10" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1143"type="checkbox"value="clap" id="11" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum13242"type="checkbox"value="clap" id="12" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum13253"type="checkbox"value="clap" id="13" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1344"type="checkbox"value="clap" id="14" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1235"type="checkbox"value="clap" id="15" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum16432"type="checkbox"value="clap" id="16" type="checkbox" onChange = {this.changeBeat}></input>
                 </div>
                 <div class="row4">
-                    <input class="drum1"type="checkbox"value="perc" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum2"type="checkbox"value="perc" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3"type="checkbox"value="perc" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum4"type="checkbox"value="perc" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5"type="checkbox"value="perc" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum6"type="checkbox"value="perc" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum7"type="checkbox"value="perc" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum8"type="checkbox"value="perc" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum9"type="checkbox"value="perc" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum10"type="checkbox"value="perc" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum11"type="checkbox"value="perc" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12"type="checkbox"value="perc" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13"type="checkbox"value="perc" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum14"type="checkbox"value="perc" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum15"type="checkbox"value="perc" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum16"type="checkbox"value="perc" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum323441"type="checkbox"value="perc" id="1" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum25735"type="checkbox"value="perc" id="2" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum56245473"type="checkbox"value="perc" id="3" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum46547547"type="checkbox"value="perc" id="4" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum5734473"type="checkbox"value="perc" id="5" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum6537435754"type="checkbox"value="perc" id="6" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum775474"type="checkbox"value="perc" id="7" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum757457348"type="checkbox"value="perc" id="8" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum97696967"type="checkbox"value="perc" id="9" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1032523143"type="checkbox"value="perc" id="10" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum112352135"type="checkbox"value="perc" id="11" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1256354745"type="checkbox"value="perc" id="12" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum135754"type="checkbox"value="perc" id="13" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum143246456"type="checkbox"value="perc" id="14" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum15547653"type="checkbox"value="perc" id="15" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum161253346"type="checkbox"value="perc" id="16" type="checkbox" onChange = {this.changeBeat}></input>
                 </div>
 
                 <div class="row5">
-                    <input class="drum1"type="checkbox"value="hat" id="1" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum2"type="checkbox"value="hat" id="2" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum3"type="checkbox"value="hat" id="3" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum4"type="checkbox"value="hat" id="4" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum5"type="checkbox"value="hat" id="5" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum6"type="checkbox"value="hat" id="6" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum7"type="checkbox"value="hat" id="7" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum8"type="checkbox"value="hat" id="8" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum9"type="checkbox"value="hat" id="9" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum10"type="checkbox"value="hat" id="10" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum11"type="checkbox"value="hat" id="11" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum12"type="checkbox"value="hat" id="12" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum13"type="checkbox"value="hat" id="13" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum14"type="checkbox"value="hat" id="14" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum15"type="checkbox"value="hat" id="15" type="checkbox" onChange = {this.changeBeat}></input>
-                    <input class="drum16"type="checkbox"value="hat" id="16" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum710"type="checkbox"value="hat" id="1" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum711"type="checkbox"value="hat" id="2" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum3712"type="checkbox"value="hat" id="3" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum41209218302913"type="checkbox"value="hat" id="4" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum52109381290"type="checkbox"value="hat" id="5" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum6231903821093"type="checkbox"value="hat" id="6" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum7213098213821-3"type="checkbox"value="hat" id="7" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum821089321903"type="checkbox"value="hat" id="8" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum92128913712"type="checkbox"value="hat" id="9" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum12918372109830"type="checkbox"value="hat" id="10" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum12981370928173121"type="checkbox"value="hat" id="11" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum12131827328912"type="checkbox"value="hat" id="12" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum131231298210"type="checkbox"value="hat" id="13" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1412937301928"type="checkbox"value="hat" id="14" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1512389123210983"type="checkbox"value="hat" id="15" type="checkbox" onChange = {this.changeBeat}></input>
+                    <input class="drum1612321321312"type="checkbox"value="hat" id="16" type="checkbox" onChange = {this.changeBeat}></input>
                 </div>
             
              

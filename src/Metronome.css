@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap');
+
+.body{
+  
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  background-color: #8cd98c;
+  height:100vh;
+  width: 100%;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+        "h h h h h h h h h"
+        "s s s s s s s s s"
+        "d d d d d d d d d"
+        "f f f f f f f f f"
+}
+
+.header{
+  grid-area: h;
+  font-family: 'Source Code Pro';
+}
+
+.bpm-slider{
+  grid-area: s;
+  font-family: 'Source Code Pro';
+  
+}
+
+.drums{
+  font-family: 'Source Code Pro';
+  grid-area: d
+}
+
+.footer{
+  grid-area: f;
+}
+
+
+.metronome button {
+  background: #c94d46;
+  padding: 10px;
+  border: 1px solid #832420;
+  border-radius: 2px;
+  width: 100px;
+  color: #fff;
+  font-size: 18px;
+}
+
+input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  vertical-align: bottom;
+  -webkit-box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+-moz-box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+}
+
+input[type=checkbox]:after {
+  content: "";
+  border-bottom: 20px solid white;
+  border-top: 20px solid white;
+  display: block;
+  border: "black";
+  opacity: 1;
+}
+
+input[type=checkbox]:checked:after {
+  border-bottom: 20px solid blue;
+  border-top: 20px solid blue;
+}
+
+.container2{
+  display: grid;
+  height:100vh;
+  width: 100%;
+  grid-gap: 4px;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(5, 7%);
+  grid-template-areas:
+        
+        "a r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1"
+        "c r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2"
+        "d r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3"
+        "e r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4"
+        "f r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5"
+}
+
+
+.kick{
+  grid-area:a;
+}
+.snare{
+  grid-area:c;
+}
+.clap{
+  grid-area:d;
+}
+.perc{
+  grid-area:e;
+}
+.hat{
+  grid-area: f;
+}
+
+.row1{
+  grid-area:r1;
+}
+
+.row2{
+  grid-area:r2;
+}
+.row3{
+  grid-area:r3;
+}
+.row4{
+  grid-area:r4;
+}
+
+.row5{
+  grid-area:r5;
+}
+
+
+
+.container2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: "black";
+}

@@ -9,6 +9,10 @@ import perc from "./drums/drum9.wav";
 import hat from "./drums/drum6.wav";
 
 
+
+
+/*
+*/
 class Metronome extends Component {
     constructor(props){
         super(props)
@@ -17,22 +21,11 @@ class Metronome extends Component {
             count: 0,
             bpm: 240,
             beatsPerMeasure: 4,
-            playOn1: ["","","","",""],
-            playOn2: ["","","","",""],
-            playOn3: ["","","","",""],
-            playOn4: ["","","","",""],
-            playOn5: ["","","","",""],
-            playOn6: ["","","","",""],
-            playOn7: ["","","","",""],
-            playOn8: ["","","","",""],
-            playOn9: ["","","","",""],
-            playOn10: ["","","","",""],
-            playOn11: ["","","","",""],
-            playOn12: ["","","","",""],
-            playOn13: ["","","","",""],
-            playOn14: ["","","","",""],
-            playOn15: ["","","","",""],
-            playOn16: ["","","","",""],
+            masterList: [["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],
+            ["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],
+            ["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],
+            ],
+           
         }
         this.click1 = new Audio(click1);
         this.click2 = new Audio(click2);
@@ -44,12 +37,10 @@ class Metronome extends Component {
     }
 
     playClick = () =>{
-        const {count} = this.state;
-        
-        
-        if(count === 0){
-            let list = this.state.playOn1
-            console.log(list)
+        let {count} = this.state;
+            
+            console.log(count)
+            let list = this.state.masterList[count]
             list.map((item) =>{
                 if(item==="kick"){
                     this.kick.play()
@@ -66,358 +57,7 @@ class Metronome extends Component {
                 if(item==="clap"){
                     this.clap.play()
                 }
-                return(null)
-            })
-
-        }
-        if(count === 1){
-            let list = this.state.playOn2
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 2){
-            let list = this.state.playOn3
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 3){
-            let list = this.state.playOn4
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 4){
-            let list = this.state.playOn5
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 5){
-            let list = this.state.playOn6
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 6){
-            let list = this.state.playOn7
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 7){
-            let list = this.state.playOn8
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 8){
-            let list = this.state.playOn9
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 9){
-            let list = this.state.playOn10
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 10){
-            let list = this.state.playOn11
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 11){
-            let list = this.state.playOn12
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 12){
-            let list = this.state.playOn13
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }return(null)
-
-            })
-
-        }
-        if(count === 13){
-            let list = this.state.playOn14
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 14){
-            let list = this.state.playOn15
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        if(count === 15){
-            let list = this.state.playOn16
-            console.log(list)
-            list.map((item) =>{
-                if(item==="kick"){
-                    this.kick.play()
-                }
-                if(item==="snare"){
-                    this.snare.play()
-                }
-                if(item==="perc"){
-                    this.perc.play()
-                }
-                if(item==="hat"){
-                    this.hat.play()
-                }
-                if(item==="clap"){
-                    this.clap.play()
-                }
-                return(null)
-            })
-
-        }
-        console.log(count)
-        
-
+        })    
         this.setState(state => ({
             count: (state.count + 1)
           }));
@@ -426,6 +66,7 @@ class Metronome extends Component {
                 count: 0
             })
         }
+        
     }
 
     startStop = () =>{
@@ -452,942 +93,72 @@ class Metronome extends Component {
     }
 
     changeBeat = (e) =>{
-        console.log(e.target.value)
-        console.log(e.target.checked)
-        let val = e.target.value
+
         if(e.target.checked){
-            if(parseInt(e.target.id) === 1){
-                
-                let list = this.state.playOn1
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
+            let val = e.target.value
+        let listIndex = this.state.masterList[e.target.id-1]
+        console.log(listIndex)
+        console.log(this.state.masterList)
+        let masterCopy = this.state.masterList
+        if(val==="kick"){
+            listIndex[0] = "kick"
+        }
+        if(val==="snare"){
+            listIndex[1] = "snare"
+        }
+        if(val==="clap"){
+            listIndex[2] = "clap"
+        }
+        if(val==="perc"){
+            listIndex[3] = "perc"
+        }
+        if(val==="hat"){
+            listIndex[4] = "hat"
+        }
+        masterCopy[e.target.id-1] = listIndex
 
-                this.setState(state => 
-                    ({
-                    playOn1: list
-                  })
-                  
-                )
-                return(null)
-            }
-            
-            if(parseInt(e.target.id) === 2){
-                let list = this.state.playOn2
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn2: list
-                  })
+        this.setState(state => 
+            ({
+            masterList: masterCopy
+          })
 
-                ) 
-                return(null)
-                
-            }
-            if(parseInt(e.target.id) === 3){
-                console.log("here")
-                let list = this.state.playOn3
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn3: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 4){
-                console.log("here")
-                let list = this.state.playOn4
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn4: list
-                  })
-
-                )
-            }
-            if(parseInt(e.target.id) === 5){
-                console.log("here")
-                let list = this.state.playOn5
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn5: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 6){
-                console.log("here")
-                let list = this.state.playOn6
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn6: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 7){
-                console.log("here")
-                let list = this.state.playOn7
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn7: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 8){
-                console.log("here")
-                let list = this.state.playOn8
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn8: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 9){
-                console.log("here")
-                let list = this.state.playOn9
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn9: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 10){
-                console.log("here")
-                let list = this.state.playOn10
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn10: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 11){
-                console.log("here")
-                let list = this.state.playOn11
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn11: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 12){
-                console.log("here")
-                let list = this.state.playOn12
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn12: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 13){
-                console.log("here")
-                let list = this.state.playOn13
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn13: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 14){
-                console.log("here")
-                let list = this.state.playOn14
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn14: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 15){
-                console.log("here")
-                let list = this.state.playOn15
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn15: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 16){
-                console.log("here")
-                let list = this.state.playOn16
-                if(val==="kick"){
-                    list[0] = "kick"
-                }
-                if(val==="snare"){
-                    list[1] = "snare"
-                }
-                if(val==="clap"){
-                    list[2] = "clap"
-                }
-                if(val==="perc"){
-                    list[3] = "perc"
-                }
-                if(val==="hat"){
-                    list[4] = "hat"
-                }
-                this.setState(state => 
-                    ({
-                    playOn16: list
-                  })
-
-                )
-                return(null)
-            }
+        )
 
         }
         if(!e.target.checked){
-            if(parseInt(e.target.id) === 1){
-                
-                let list = this.state.playOn1
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
 
-                this.setState(state => 
-                    ({
-                    playOn1: list
-                  })
-
-                )
-                return(null)
+            let val = e.target.value
+            let listIndex = this.state.masterList[e.target.id-1]
+            console.log(listIndex)
+            let masterCopy = this.state.masterList
+            if(val==="kick"){
+                delete listIndex[0]
+                listIndex[0] = ""
             }
-            if(parseInt(e.target.id) === 2){
-                
-                let list = this.state.playOn2
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn2: list
-                  })
-
-                )
-                return(null)
+            if(val==="snare"){
+                delete listIndex[1]
+                listIndex[1] = ""
             }
-            if(parseInt(e.target.id) === 3){
-                
-                let list = this.state.playOn3
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn3: list
-                  })
-
-                )
-                return(null)
+            if(val==="clap"){
+                delete listIndex[2]
+                listIndex[2] = ""
             }
-            if(parseInt(e.target.id) === 4){
-                
-                let list = this.state.playOn4
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn4: list
-                  })
-
-                )
-                return(null)
+            if(val==="perc"){
+                delete listIndex[3]
+                listIndex[3] = ""
             }
-            if(parseInt(e.target.id) === 5){
-                
-                let list = this.state.playOn5
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn5: list
-                  })
-
-                )
-                return(null)
+            if(val==="hat"){
+                delete listIndex[4]
+                listIndex[4] = ""
             }
-            if(parseInt(e.target.id) === 6){
-                
-                let list = this.state.playOn6
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn6: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 7){
-                
-                let list = this.state.playOn7
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn7: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 8){
-                
-                let list = this.state.playOn8
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn8: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 9){
-                
-                let list = this.state.playOn9
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn9: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 10){
-                
-                let list = this.state.playOn10
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn10: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 11){
-                
-                let list = this.state.playOn11
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn11: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 12){
-                
-                let list = this.state.playOn12
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn12: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 13){
-                
-                let list = this.state.playOn13
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn13: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 14){
-                
-                let list = this.state.playOn14
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn14: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 15){
-                
-                let list = this.state.playOn15
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn15: list
-                  })
-
-                )
-                return(null)
-            }
-            if(parseInt(e.target.id) === 16){
-                
-                let list = this.state.playOn16
-                if(val==="kick"){
-                    delete list[0]
-                    list[0] = ""
-                }
-                if(val==="snare"){
-                    delete list[1]
-                    list[1] = ""
-                }
-                if(val==="clap"){
-                    delete list[2]
-                    list[2] = ""
-                }
-                if(val==="perc"){
-                    delete list[3]
-                    list[3] = ""
-                }
-                if(val==="hat"){
-                    delete list[4]
-                    list[4] = ""
-                }
-
-                this.setState(state => 
-                    ({
-                    playOn16: list
-                  })
-
-                )
-                return(null)
-            }
+            masterCopy[e.target.id-1] = listIndex
+    
+            this.setState(state => 
+                ({
+                masterList: masterCopy
+              })
+    
+            )
         }
       }
 
@@ -1396,6 +167,17 @@ class Metronome extends Component {
         this.setState({
             bpm: bpm
         })
+    }
+
+    resetList = () =>{
+        this.setState({
+            masterList: [["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],
+            ["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],
+            ["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],
+            ]
+        })
+        window.location.reload();
+        
     }
 
 
@@ -1414,6 +196,7 @@ class Metronome extends Component {
                 {bpm} BPM
                 <input type="range" min="240" max="480" value={bpm} onChange = {this.handleBpmChange}/>
                 <a href="#" class="button-3d" onClick = {this.startStop}>{playing ? 'Stop' : 'Start'}</a>
+                <a href="#" class="button-3d" onClick = {this.resetList}>Reset</a>
                 
             </div>
         <div class="drums">
@@ -1424,7 +207,7 @@ class Metronome extends Component {
                 <div class="snare">Snare</div>
                 <div class="kick">Kick</div>
                 
-                <div class = "n1"></div>
+                
 
                 <div class="row1">
                     
